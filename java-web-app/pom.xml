@@ -17,7 +17,7 @@
    
   </dependencies>
   <build>
-    <finalName>maven-cloudaseem-app</finalName>
+    <finalName>amrutham</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
