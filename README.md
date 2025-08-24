@@ -4,3 +4,7 @@ for code coverage calculation we have code coverage plugin in pom.xml file
 
 **Multi-Tier-Python-Postgres-main**
 This project is demo for code coverage , quality gate check for python project
+
+**NodejS-JEST-main**
+
+This nodejs project is demo for scanning and pushing artifact to nexus repo
