@@ -10,3 +10,7 @@
 ### Multi-Tier-Python-Postgres-main
 
 - This project is demo for code coverage , quality gate check for python project
+
+### J-TERRA-main
+
+- This project to provision vpc and instance and installing docker and running container "adijaiswal/petsore" on port 8080 in the instance using terraform through jenkins
