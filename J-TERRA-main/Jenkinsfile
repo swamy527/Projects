@@ -2,24 +2,23 @@ pipeline {
     agent any
     
     tools {
-        terraform 'terraform1.57'
+        terraform 'terraform1.13'
     }
 
     stages {
-        stage('Git') {
+        stage('version') {
             steps {
-                git branch: 'main', credentialsId: 'git-cred', url: 'https://github.com/jaiswaladi2468/J-TERRA.git'
+               sh 'terraform version'
             }
         }
         
         stage('terra') {
             steps {
-                sh "terraform -v"
-                dir('/root/.jenkins/workspace/Terraform-With-Jenkins/T-Scripts/') {
+                dir('J-TERRA-main/T-Scripts') {
                     sh "terraform init"    
                     sh "terraform plan"
                     //sh "terraform apply --var-file terraform.tfvars --auto-approve"
-                    sh "terraform destroy --auto-approve"
+                    sh "terraform apply --auto-approve"
                 }
                 
             }
